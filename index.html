@@ -9,11 +9,18 @@
     cursor: pointer;
   }
 
-  .censored:hover {
+  .censored.revealed {
     filter: blur(0);
   }
 </style>
   </head>
+<script>
+  document.querySelectorAll('.censored').forEach(title => {
+    title.addEventListener('click', () => {
+      title.classList.toggle('revealed');
+    });
+  });
+</script>
   <body>
       <p>
         <h1>My favorite video games (not including the ones I grew up playing, mostly), by console</h1>
