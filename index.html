@@ -2,13 +2,24 @@
 <html>
   <head>
     <title>My favorite video games</title>
+<style>
+  .censored {
+    filter: blur(5px);
+    transition: filter 0.2s;
+    cursor: pointer;
+  }
+
+  .censored:hover {
+    filter: blur(0);
+  }
+</style>
   </head>
   <body>
       <p>
         <h1>My favorite video games (not including the ones I grew up playing, mostly), by console</h1>
       </p></br>
       <p>
-        <h3>Atari 2600:</h3>Donkey Kong<br>Frogger<br>Jr. Pac-Man<br>Mouse Trap<br>Oink!<br>Taz
+        <h3>Atari 2600:</h3><span class="censored">Bachelor Party</span><br>Donkey Kong<br>Frogger<br>Jr. Pac-Man<br>Mouse Trap<br>Oink!<br>Taz
       </p><br>
       <p>
         <h3>NES:</h3>Donkey Kong Jr.<br>Donkey Kong Jr. Math<br>Kirby's Adventure<br>Super Mario Bros. 3
